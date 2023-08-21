@@ -1,0 +1,80 @@
+rollback: volver de una version la cual presenta errores a una version que no los tiene
+
+Git trabaja de manera desentralizada, de manera que cada desarrallor posee una copia completa
+del codigo trabajado y poder subir los cambios a un servidor central
+
+git podemos usarlo de manera grafica con las herramientas:
+
+-GitKraken
+-GitHub Desktop
+-Sourcetree
+
+
+La manera en que trabaja la mayoria de trabajadores es desde la terminal
+
+En un entorno si usamos un sistema operativo windows git se intalara con una terminal llamada git bash
+el cual permite emular comandos de linux y mac, sin mencionar en windows.
+
+configurar git------------------------------------------------------------------------------------------------------
+
+git --version : permite ver la version que tenemos instalada en nuestra pc de git
+
+git config --global user.name "Nombre_Completo" : sirve para asignar el nombre que usaremos
+
+git config --global user.email correo.ejemplo@gmail.com : este comando es para agregar nuestra direccion de correo a git
+
+git config --global core.editor "devenv": comando para configurar nuestro editor de texto con git
+
+git config --global core.autorcrlf: comando que sirve para configurar el como git deberia manejar los saltos de linea
+(Nota: al final de autocrlf puede tener 2 valores distintos depediendo del sistema operativo que usemos, los cuales son
+true para windows, input para mac )
+
+git config --global -l: comando utilizado para verificar la configuracion 
+
+---------------------------------------------------------------------------------------------------------------------
+comandos basicos de git bash
+
+ls: permite el listar directorios que tenemos
+
+pwd: ver en el directorio donde estamos actualmente
+
+cd: para movernos entre directorios o carpetas
+ejemplo
+
+cd descargas/
+
+cd .. : este comando permite salirnos de un directorio
+
+mkdir: nos permite crear un nuevo directorio o carpeta
+
+git init: nos permite inicializar un nuevo respositorio 
+
+ls -a : muestra todos los directorios de archivos ocultos
+
+git status: nos muestra el estado del repositorio
+
+git add: nos permite realizar cambios dentro de un staging area en la etapa intermedia antes de la confirmacion
+
+git commit: sirve para registrar cambios en un staging area en el historial del repositorio
+
+rm nombre_archivo.txt: eliminar archivos
+
+git restore --staged nombre_del_archivo: nos permite restaurar algo que estaba en la etapa de unstage
+-------------------------------------------------------------------------------------------------------------------------
+
+Trabajo con git
+
+Ordenador: agregar, modificar archivos que querramos y seleccionar los archivos para pasarlos a un repositorio
+seleccionados,git comit 
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Configuracion de visual estudio 2019 comunity con git
+
+Inicio-> buscamos variables de entorno->Variables del sistema y buscamos path->editar->nuevo->agregar la ruta de instalacion de vs estudio
+
+y por ultimo aceptar
+
+en la terminal de git bash buscamos abrir con el comando: 
+
+devenv
